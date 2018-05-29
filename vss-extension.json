@@ -1,0 +1,58 @@
+{
+    "manifestVersion": 1,
+    "id": "release-gate-smoke-test",
+    "name": "Quality Gate Web Smoke Test",
+    "version": "1.0.0",
+    "publisher": "OneLuckiDev",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "images/icon-small.png"
+    },
+    "description": "Task for performing a smoke test on a released web application to validate that it is available at the end of a release.  This task will accept multiple web URLs, and a retry count.",
+    "categories": [
+        "Build and release"
+    ],
+    "files": [
+        {
+            "path": "QualityGateSmokeTest"
+        },
+        {
+            "path": "images/icon-small.png",
+            "addressable": true
+        },
+        {
+            "path": "images/input.PNG",
+            "addressable": true
+        },
+        {
+            "path": "images/task.png",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "vsts-smoke-test-gate",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "QualityGateSmokeTest"
+            }
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/jeffpriz/vsts-smoke-test-gate"
+    },
+    "public": true
+}
