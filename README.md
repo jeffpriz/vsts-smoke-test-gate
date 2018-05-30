@@ -1,6 +1,9 @@
 # VSTS Release Quality Gate Smoke Test
 TFS and VSTS Quality Gate task for a simple web smoke test.
 
+**For an Agent-based web smoke test task that will retry and hit multiple URLs (good for web farm scenarios), please see this task:
+https://marketplace.visualstudio.com/items?itemName=OneLuckiDev.release-web-smoke-test-task
+
 ## Functionality
 Add to the server Quality Gate after a release to ensure that a web page is available prior to releasing to a later environment
 

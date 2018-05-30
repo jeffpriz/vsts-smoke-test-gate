@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "release-gate-smoke-test",
     "name": "Quality Gate Web Smoke Test",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "publisher": "OneLuckiDev",
     "targets": [
         {
@@ -12,7 +12,7 @@
     "icons": {
         "default": "images/icon-small.png"
     },
-    "description": "Task for performing a smoke test on a released web application to validate that it is available at the end of a release.  This task will accept multiple web URLs, and a retry count.",
+    "description": "Simple server-side (not agent based) Task for performing a smoke test on a released web application to validate that it is available at the end of a release as a Quality Gate.",
     "categories": [
         "Build and release"
     ],
